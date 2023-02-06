@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock  %}
+
+{% block container %} 
+<div class="container">
+<h1 class="title-container">Đăng ký</h1>
+    <form action="{{ url_for('register') }}" method= "POST">
+      {% if msg %}
+      <div class="alert alert-success">
+        <strong>Thông báo!</strong> {{msg}}
+    </div>
+      {% endif %}
+        <div class="login-container">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Tên đăng nhập</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="voduyviet"  name = "name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" name = "password">
+              </div>  
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@address.com" name="email">
+              </div>  
+              <input type="submit" class="btn btn-success" style="width: 200px" value="Đăng ký">
+        </div>
+    </form>
+</div>
+{% endblock  %}

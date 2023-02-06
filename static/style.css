@@ -1,0 +1,22 @@
+body{
+    width: 1260px;
+    position: absolute;
+	left: 15%;
+}
+.login1{
+    padding: 0px 10px 0px 30px;
+}
+.login{
+    padding: 0px 10px 0px 10px;
+}
+.login-container{
+    padding: 0px 20% 0px 20%;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.title-container{
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+}
